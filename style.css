@@ -28,6 +28,16 @@ body {
     display: flex;
     justify-content: space-between;
 }
+#app header button {
+    cursor: pointer;
+    color: #f5f5f5;
+    border: none;
+    background-color: transparent;
+}
+#app header button a i {
+    color: #f5f5f5;
+    font-size: 1.5rem;
+}
 .board {
     flex-grow: 1;
     background: #272727;

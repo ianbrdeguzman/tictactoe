@@ -4,14 +4,17 @@ class GameUI {
         this.root.innerHTML = `
         		<header>
             		    <div class="player-turn">
-                		Player X's turn
+                		    Player X's turn
             		    </div>
             		    <div class="game-status">
-                		In Progress
+                		    In Progress
             		    </div>
             		    <button class="restart">
-                		<i class="fas fa-redo-alt"></i>
+                		    <i class="fas fa-redo-alt"></i>
             		    </button>
+                        <button>
+                            <a href="https://github.com/ianbrdeguzman/tictactoe"><i class="fab fa-github-square"></i></a>
+                        </button>
         		</header>
         		<div class='board'>
             		    <div class="board-tile" data-index="0"></div>
@@ -51,7 +54,7 @@ class GameUI {
     updateStatus(game) {
         let status = `In Progress`;
         if (game.findWinningCombination()) {
-            status = `${game.player} is the Winner`;
+            status = `${game.player} is the Winner!`;
         } else if (!game.isInProgress()) {
             status = `It's a tie!`;
         }
